@@ -1,0 +1,290 @@
+/*
+    <weight>: Use a value from 100 to 900
+    <uniquifier>: Use a unique and descriptive class name
+    .noto-sans-<uniquifier> {
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings:
+       "wdth" 100;
+
+    .montserrat-<uniquifier> {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.buttons {
+    background-color: #FB2056;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50vh;
+    padding: 17px 40px;
+}
+
+.buttons:hover {
+    background-color: #DA1C4B;
+    cursor: pointer;
+}
+
+/*---header---*/
+
+header {
+    background-image: url("assets/images/Home/home1_BG.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header::before {
+    content: "";
+    background-color: #191919;
+    opacity: 0.65;
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
+/*---header/nav---*/
+
+#topbanner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 70px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 544px) {
+    #topbanner {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 922px) {
+    #topbanner {
+        max-width: 1240px;
+    }
+}
+
+/*---header/nav/left---*/
+
+#col1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#col1 > span {
+    padding: 1rem 0;
+}
+
+#imagelogo {
+    width: 150px;
+    height: 42px;
+    border: 0;
+    vertical-align: middle;
+}
+
+@media (max-width: 921px) {
+        #imagelogo {
+            width: 120px;
+        }
+}
+
+/*---header/nav/right---*/
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+
+ul a {
+    line-height: 70px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+    display: flex;
+    height: 100%;
+}
+
+nav > a {
+    padding-left: 10px;
+}
+
+#takeaction {
+    padding: 16px 40px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#outdoorheader {
+    padding-top: 270px;
+    padding-bottom: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: 8px;
+    position: relative;
+}
+
+@media (max-width:1024px) {
+    #outdoorheader {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width:768px) {
+    #outdoorheader {
+        width: 800px;
+    }
+}
+
+/*---front view---*/
+
+#outdoorheader h3 {
+    margin: 0;
+    color: white;
+    line-height: 1.3em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#outdoorheader hr {
+    border: 0;
+    border-block-start: 2px solid #FB2056;
+    width: 8%;
+    margin-block: 0 auto;
+}
+
+#outdoorheader > div {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#outdoorheader a {
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+}
+
+.learnmore {
+    font-size: 0.875rem;
+    line-height: 1em;
+    padding: 0;
+}
+
+/*---quote---*/
+
+#quotesection {
+    background-color: #ececec;
+}
+
+.quoteSection p {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.quoteIcon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.quote {
+    font-size: 21px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+#autor {
+    font-size: 16px;
+    color: #191919;
+}
+
+/*---upcomingevent---*/
+
+#explore {
+    background-image: url("assets/images/Home/home2_BG.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.4em;
+    margin-block: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* .text {
+    color: white;
+    background-color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+} */

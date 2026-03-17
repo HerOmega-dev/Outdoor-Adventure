@@ -237,9 +237,14 @@ nav>a {
 /*---quote---*/
 
 #quotesection {
-    background-color: #ececec;
+    background-color: var(--globalcolor8);
     display: flex;
     justify-content: center;
+}
+
+#quoteimage {
+    aspect-ratio: auto 200 / 154;
+    width: 94.05px;
 }
 
 #quotetext {

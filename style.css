@@ -240,18 +240,25 @@ nav>a {
     background-color: var(--globalcolor8);
     display: flex;
     justify-content: center;
+    height: 100%;
+}
+
+#divquotesection {
+    max-width: var(--max-width);
+    width: 100%;
     padding-block: 50px;
-    /* width: 1140px; */
-    /* margin: 0 auto; */
+    display: flex;
 }
 
 #divquoteimage {
-    width: calc(1140px * 0.15);
+    width: 15%;
+    height: auto;
+    line-height: 0;
 }
 
 #quoteimage {
-    aspect-ratio: auto 200 / 154;
-    width: 94.04px;
+    width: 55%;
+    height: auto;
 }
 
 #quotetext {
@@ -259,11 +266,10 @@ nav>a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-inline-end: calc(1140px * 0.17);
-}
-
-#test {
-    line-height: 1;
+    width: 85%;
+    height: 100%;
+    line-height: 1.7rem;
+    padding-inline-end: 17%;
 }
 
 #quote {
@@ -273,10 +279,18 @@ nav>a {
     line-height: 1.7rem;
 }
 
+#test {
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1rem;
+    text-align: center;
+}
+
 #autor {
     color: var(--globalcolor5);
     margin-block: 0;
     line-height: 1.5rem;
+    display: inline-block;
 }
 
 /*---upcomingevent---*/
